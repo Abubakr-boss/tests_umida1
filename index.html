@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TURIZM VA MEHMONDO'STLIKDA BARQAROR VA MAQSADLI BOSHQARUV — Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="header">
+      <div class="logo">TMB</div>
+      <div>
+        <div class="title">TURIZM VA MEHMONDO'STLIKDA BARQAROR VA MAQSADLI BOSHQARUV — test savollari</div>
+        <div class="meta">Har bir savol uchun variantni tanlang yoki "sizning javobing" maydoniga harfni yozing, so'ng "Yuborish"ni bosing</div>
+      </div>
+    </div>
+
+    <div class="question-area">
+      <div class="q-number" id="qnum">Test 1</div>
+      <div class="q-text" id="qtext">Savol yuklanmoqda...</div>
+
+      <form id="quizForm">
+        <div class="options" id="options"></div>
+
+        <div class="answer-write">
+          <label class="small">sizning javobing (yozish uchun joy)</label>
+          <input type="text" id="typedAnswer" placeholder="A yoki B yoki C yoki D" maxlength="1" autocomplete="off" />
+        </div>
+
+        <div class="controls">
+          <button type="submit" id="submitBtn">Yuborish</button>
+          <div class="progress" id="progress">0 / 0</div>
+        </div>
+      </form>
+
+      <div id="resultBox" style="display:none" class="results"></div>
+      <div class="footer-note">Oxirida sizning natijangiz (to'g'ri va xato javoblar soni) chiqadi</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
